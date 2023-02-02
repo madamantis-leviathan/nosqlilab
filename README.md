@@ -1,15 +1,13 @@
-# NoSQLi Lab
+# NoSQLi Lab (updated for 2023)
 
-With the rise in popularity of NoSQL I figured it was time to build a lab so I
-could have a play with the different techniques used to attack them. This lab
-was the result.
+This lab includes two NoSQL injection exercises. Since the base version fails to build in 2023, I removed obsolete parts of the original Dockerfile, and improved the docker-compose. Please note that the MongoDB image will does not work on Mac M1. 
 
-Seeing as I've already played with Redis for some development work I decided to
-go with MongoDB here. I have built two different scenarios in this lab, an
-equivalent of the SQLi `" or 1=1"` vulnerability and also a new type of attack,
-which is specific to NoSQL, script injection. I might add more later but these
-were good for a start.
+# Installation and usage
 
-For more information see the full write up on my site: 
+1. [Install Docker CE for your platform (Windows, Linux, OSX)](https://docs.docker.com/engine/installation/)
+2. [Install Docker-Compose](https://docs.docker.com/compose/install/)
+3. To launch the containers, run `docker-compose up --build`. You now have two containers running, one for the web front end and one for the MongoDB server.
+4. Visit http://127.0.0.1:8080 and reset the database.
 
-[NoSQLi Lab](https://digi.ninja/projects/nosqli_lab.php)
+
+[Original writeup](https://digi.ninja/projects/nosqli_lab.php)
