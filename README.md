@@ -1,6 +1,6 @@
 # NoSQLi Lab (updated for 2023)
 
-This lab includes two NoSQL injection exercises. Since the base version fails to build in 2023, I removed obsolete parts of the original Dockerfile, and improved the docker-compose. Please note that the MongoDB image will does not work on Mac M1. 
+This lab includes two NoSQL injection exercises. Since the base version fails to build in 2023, I removed obsolete parts of the original Dockerfile, and improved the docker-compose. Please note that the MongoDB image does not work on Mac M1. 
 
 # Installation and usage
 
