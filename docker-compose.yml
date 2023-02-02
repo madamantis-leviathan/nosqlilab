@@ -1,4 +1,4 @@
-version: '2.1'
+version: '2.4'
 
 services:
   web:
@@ -6,21 +6,20 @@ services:
     hostname: nosqliweb
     build:
       context: .
-      dockerfile: Dockerfile-web
+      dockerfile: Dockerfile
     networks:
       - nosqli-network
     ports:
       - "8080:80"
+    platform: linux/amd64
   mongo:
     container_name: nosqli-mongodb
     image: mongo:3.4.1
-    build:
-      context: .
-      dockerfile: Dockerfile-mongo
     networks:
       - nosqli-network
     ports:
       - "27017:27017"
+    platform: linux/amd64
 
 networks:
   nosqli-network:

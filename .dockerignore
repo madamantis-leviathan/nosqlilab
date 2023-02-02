@@ -1,5 +1,4 @@
 README
 Dockerfile-web
-Dockerfile-mongo
 docker-compose.yml
 .git
