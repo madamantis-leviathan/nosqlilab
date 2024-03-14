@@ -1,0 +1,5 @@
+deb [trusted=yes] http://archive.debian.org/debian/ stretch main
+deb-src [trusted=yes] http://archive.debian.org/debian/ stretch main
+deb [trusted=yes] http://archive.debian.org/debian/ stretch-backports main
+deb [trusted=yes] http://archive.debian.org/debian-security/ stretch/updates main
+deb-src [trusted=yes] http://archive.debian.org/debian-security/ stretch/updates main
