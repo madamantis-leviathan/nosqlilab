@@ -2,10 +2,11 @@ FROM --platform=linux/amd64 php:7.0-apache
 MAINTAINER jose nazario <jose@monkey.org>
 LABEL version="1.0" description="nosqli-labs Docker image"
 
+COPY sources.list /etc/apt/sources.list
 RUN apt-get update && apt-get install -y gnupg wget apt-transport-https ca-certificates
-
 RUN	apt-get -qq update
 RUN apt-get install -y libssl-dev unzip
+
 RUN pecl channel-update pecl.php.net
 RUN pecl install mongodb-1.8.0
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer	
